@@ -1,15 +1,15 @@
-// Functions
+// Functions 
 
-/*function printAll() {
+/* function printAll() {
   for(let i = 0; i < arguments.length; i++) {
     console.log(arguments[i]);
   }
 }
  printAll(1, 2, 3, 4, 5);
- printAll(10, 20);*/
+ printAll(10, 20); */
 
- function greeting() {
-   console.log('Hello');
+ function greetings() {
+   return 'Hello John!';
  }
-
- greeting(); //this should log out Hello
+ let message = greetings();
+ console.log(message); // this should log out Hello
