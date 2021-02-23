@@ -12,7 +12,7 @@
   return 'Hello John!';
  }
  let message = greetings();
- console.log(message); this should log out Hello
+ console.log(message); // this should log out Hello
 
 function sum(num1, num2) {
   return num1 + num2;
