@@ -28,3 +28,15 @@ function sum(num1, num2) {
 let result = sum(2, 3);
 console.log(result); // result should show 5
 
+// Closure Example 
+
+let greeting = (function() {
+  let message = 'Hello';
+  let getMessage = function() {
+    return message;
+  };
+  return {
+    getMessage: getMessage,
+  };
+})();
+console.log(greeting.getMessage());
