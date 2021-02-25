@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', main)
  printAll(1, 2, 3, 4, 5);
  printAll(10, 20); */
 
- function greetings() {
+ /*function greetings() {
   return 'Hello John!';
  }
  let message = greetings();
@@ -27,6 +27,7 @@ function sum(num1, num2) {
 }
 let result = sum(2, 3);
 console.log(result); // result should show 5
+*/
 
 // Closure Example 
 
@@ -51,3 +52,11 @@ console.log(counter1()); // 0
 console.log(counter1()); // 1
 let counter2 = setupCounter(10);
 console.log(counter2());
+
+// Arrow Functions
+
+let greetings = () => {
+  return 'Hello World!'
+};
+let message = greetings();
+console.log(message); // Hello World!
