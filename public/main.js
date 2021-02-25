@@ -1,3 +1,11 @@
+const main = () => {
+  if (document.querySelector('h1.hello-world')) {
+    document.querySelector('h1.hello-world').textContent = 'Hello, World!'
+  }
+}
+
+document.addEventListener('DOMContentLoaded', main)
+
 // Functions 
 
 /* function printAll() {
@@ -19,3 +27,4 @@ function sum(num1, num2) {
 }
 let result = sum(2, 3);
 console.log(result); // result should show 5
+
