@@ -93,7 +93,7 @@ console.log(output);*/
 
 // Call Method
 
-let person1 = {name:'John', age: 22};
+/*let person1 = {name:'John', age: 22};
 let person2 = {name:'Mary', age: 26};
 
 let sayHi = function() {
@@ -111,4 +111,19 @@ function introduction(name, profession) {
 
   introduction.apply(undefined,["Mary", "Lawyer"]);
 
-  introduction.call(undefined, "James", "artist");
+  introduction.call(undefined, "James", "artist");*/
+
+  let person1 = {
+    name: 'Mary',
+    getName: function() {
+      return this.name;
+    }
+  };
+
+  let person2 = {
+    name: 'John'
+  };
+
+  let getNameCopy = person1.getName.bind(person2);
+
+  console.log(getNameCopy());
