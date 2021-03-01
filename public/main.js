@@ -102,3 +102,13 @@ let sayHi = function() {
 
 sayHi.call(person1);
 sayHi.call(person2);
+
+function introduction(name, profession) {
+  console.log("My name is " + name + " and I am a " + profession +".");
+  }
+  
+  introduction("John", "student");
+
+  introduction.apply(undefined,["Mary", "Lawyer"]);
+
+  introduction.call(undefined, "James", "artist");
