@@ -31,7 +31,7 @@ console.log(result); // result should show 5
 
 // Closure Example 
 
-let greeting = (function() {
+/*let greeting = (function() {
   let message = 'Hello';
   let getMessage = function() {
     return message;
@@ -61,14 +61,27 @@ console.log(counter2());
 let message = greetings();
 console.log(message); // Hello World! */
 
-let greetings = name => 'Hello ' + name;
+/*let greetings = name => 'Hello ' + name;
 let message = greetings('Manuel')
-console.log(message); // Hello Manuel
+console.log(message); // Hello Manuel*/
 
 let message = {
   name: 'John',
   regularFunction: function() {
+    console.log(this)
     console.log('Hello ' + this.name);
   },
   arrowFunction: () => console.log('Hi ' + this.name)
 }
+
+message.regularFunction();
+message.arrowFunction();
+
+// Add two numbers using regular and arrow functions
+
+function sum(num1, num2) {
+  return num1 + num2;
+}
+
+let output = sum(10, 5);
+console.log(output);
