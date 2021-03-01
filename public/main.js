@@ -88,5 +88,5 @@ console.log(output);*/
 
 let sum = (num1, num2) => num1 + num2; // Arrow Function
 
-let output = sum(10, 5);
+let output = sum(7, 5);
 console.log(output);
