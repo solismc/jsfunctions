@@ -127,3 +127,21 @@ function introduction(name, profession) {
   let getNameCopy = person1.getName.bind(person2);
 
   console.log(getNameCopy());
+
+  // Built-In Functions
+
+  // Eval
+
+  let x = 1;
+  let y = 2;
+  let s = "abc";
+
+  console.log(eval('x + y + s')); // 3abc
+
+  console.log(parseInt("F", 16)) // 15
+  console.log(parseInt("15", 10)) // 15
+  console.log(parseInt("Hi", 10)) // NaN
+
+  console.log(parseFloat(3.99)); //3.99
+  console.log(parseFloat(399)); //399
+  console.log(parseFloat("x")); // NaN
