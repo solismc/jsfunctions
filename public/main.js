@@ -55,8 +55,20 @@ console.log(counter2());
 
 // Arrow Functions
 
-let greetings = () => {
+/*let greetings = () => {
   return 'Hello World!'
 };
 let message = greetings();
-console.log(message); // Hello World!
+console.log(message); // Hello World! */
+
+let greetings = name => 'Hello ' + name;
+let message = greetings('Manuel')
+console.log(message); // Hello Manuel
+
+let message = {
+  name: 'John',
+  regularFunction: function() {
+    console.log('Hello ' + this.name);
+  },
+  arrowFunction: () => console.log('Hi ' + this.name)
+}
