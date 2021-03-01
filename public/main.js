@@ -86,7 +86,19 @@ message.arrowFunction();
 let output = sum(10, 5);
 console.log(output);*/
 
-let sum = (num1, num2) => num1 + num2; // Arrow Function
+/*let sum = (num1, num2) => num1 + num2; // Arrow Function
 
 let output = sum(7, 5);
-console.log(output);
+console.log(output);*/
+
+// Call Method
+
+let person1 = {name:'John', age: 22};
+let person2 = {name:'Mary', age: 26};
+
+let sayHi = function() {
+  console.log('Hi, ' + this.name);
+}
+
+sayHi.call(person1);
+sayHi.call(person2);
