@@ -55,7 +55,7 @@ console.log(counter2());
 
 // Arrow Functions
 
-/*let greetings = () => {
+let greetings = () => {
   return 'Hello World!'
 };
 let message = greetings();
@@ -63,7 +63,7 @@ console.log(message); // Hello World! */
 
 /*let greetings = name => 'Hello ' + name;
 let message = greetings('Manuel')
-console.log(message); // Hello Manuel*/
+console.log(message); // Hello Manuel
 
 let message = {
   name: 'John',
@@ -79,7 +79,7 @@ message.arrowFunction();
 
 // Add two numbers using regular and arrow functions
 
-/*function sum(num1, num2) {
+function sum(num1, num2) {
   return num1 + num2;
 }
 
@@ -89,11 +89,11 @@ console.log(output);*/
 /*let sum = (num1, num2) => num1 + num2; // Arrow Function
 
 let output = sum(7, 5);
-console.log(output);*/
+console.log(output);
 
 // Call Method
 
-/*let person1 = {name:'John', age: 22};
+let person1 = {name:'John', age: 22};
 let person2 = {name:'Mary', age: 26};
 
 let sayHi = function() {
@@ -111,7 +111,7 @@ function introduction(name, profession) {
 
   introduction.apply(undefined,["Mary", "Lawyer"]);
 
-  introduction.call(undefined, "James", "artist");*/
+  introduction.call(undefined, "James", "artist");
 
   let person1 = {
     name: 'Mary',
@@ -144,4 +144,26 @@ function introduction(name, profession) {
 
   console.log(parseFloat(3.99)); //3.99
   console.log(parseFloat(399)); //399
-  console.log(parseFloat("x")); // NaN
+  console.log(parseFloat("x")); // NaN */
+
+  // Rest Parameters and Spread Operator
+
+/*let sayHi = function greet(message, name = 'World') {
+  console.log(message + ' ' + name);
+}
+sayHi('Hello');
+sayHi('Hi', 'John');*/
+
+function greet(message, ...names) {
+  console.log(message + ' everyone!')
+  names.forEach(name => console.log('Hi ' + name));
+}
+  greet('Welcome', 'Mary', 'John', 'James'); // Hi Mary, Hi John, Hi James
+
+
+// Spread Operator
+
+
+  
+  
+  
