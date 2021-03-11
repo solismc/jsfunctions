@@ -8,5 +8,7 @@ html {
 
 body {
   margin: 0;
+  padding-left: 5vw;
+  padding-top: 5vh;
   min-height: 100%;
 }
