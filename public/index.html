@@ -3,16 +3,26 @@
   <head lang="en">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>jsfunctions</title>
+    <title>JS Functions</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/screen.css" />
   </head>
   <body>
-    <h1 class="hello-world"></h1>
+    <h1>JavaScript Array Sort</h1>
+    <p>The sort() method sorts an array alphabetically.</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
     <script src="/main.js" charset="utf-8"></script>
-    <span> Javascript Samples </span>
-    <button onclick="greet();">Greet Sample</button>
     <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits;
+        function myFunction() {
+        fruits.sort();
+        document.getElementById("demo").innerHTML = fruits;
+}
     </script>
   </body>
+</html>
+
+</body>
 </html>

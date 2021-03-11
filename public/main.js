@@ -1,6 +1,6 @@
 const main = () => {
   if (document.querySelector('h1.hello-world')) {
-    document.querySelector('h1.hello-world').textContent = 'Javascript Functions'
+    document.querySelector('h1.hello-world').textContent = 'JavaScript Array Sort'
   }
 }
 
